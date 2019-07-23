@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 from random import randint
 
 from PIL import Image
-img = Image.open('fengjing.jpg').convert("RGB")
+img = Image.open('../org_image/fengjing.jpg').convert("RGB")
 
 def gauss_noise(image):
     image = np.array(image)
