@@ -1,7 +1,7 @@
 # add-noise-to-images
 add Guass Noise and Salt And Pepper Noise to images
 
-###在图像中加入椒盐噪声
+### 1. 在图像中加入椒盐噪声
 
 运行SaltandPepper.py<br>
 
