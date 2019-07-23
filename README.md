@@ -5,7 +5,8 @@ add Guass Noise and Salt And Pepper Noise to images
 
 SaltandPepper.py<br>
 原图：<br>
-![]https://github.com/cassie1728/add-noise-to-images/raw/master/org_image/fengjing.jpg
+![](https://github.com/cassie1728/add-noise-to-images/raw/master/org_image/fengjing.jpg)
+<br>
 结果图：
 
 continue to learn
