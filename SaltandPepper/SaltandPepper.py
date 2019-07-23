@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import random
 
 from PIL import Image
-img = Image.open('fengjing.jpg').convert("RGB")
+img = Image.open('../org_image/fengjing.jpg').convert("RGB")
 
 def salt_pepper(img, SNR):
     img_ = img.copy()
