@@ -35,5 +35,11 @@ continue to learn
 
 实践时发现一个错误。
 
-python3 下 运行gauss2.py没有问题，但是在python2环境下运行会发生异常，产生
+python3 下 运行gauss2.py没有问题，但是在python2环境下运行会发生异常，产生下图所示图片。
+![](https://github.com/cassie1728/add-noise-to-images/raw/master/gauss/1.png)
 
+经过排查，发现
+```
+    image = np.array(image)
+    image = np.array(image/255, dtype=float) //python
+```
