@@ -38,8 +38,18 @@ continue to learn
 python3 下 运行gauss2.py没有问题，但是在python2环境下运行会发生异常，产生下图所示图片。
 ![](https://github.com/cassie1728/add-noise-to-images/raw/master/gauss/1.png)
 
-经过排查，发现
+经过排查，发现是在做除法时，python2和python3不一致产生的bug……
 ```
     image = np.array(image)
     image = np.array(image/255, dtype=float) //python
 ```
+python2中两个整数相除，会自动四舍五入保存为整数。
+
+解决办法是，把分子转换为float，再做除法，即可得到float。
+
+```
+    image = np.array(image, dtype=float)
+    image = np.array(image/255, dtype=float) //python
+```
+
+## 细节决定成败啊朋友们！
