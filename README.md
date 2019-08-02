@@ -43,7 +43,7 @@ python3 下 运行gauss2.py没有问题，但是在python2环境下运行会发�
     image = np.array(image)
     image = np.array(image/255, dtype=float) //python
 ```
-python2中两个整数相除，会自动四舍五入保存为整数。
+python2中两个整数相除，会自动四舍五入保存为整数。所以0.2什么的都变成0了，就全是黑的了……
 
 解决办法是，把分子转换为float，再做除法，即可得到float。
 
